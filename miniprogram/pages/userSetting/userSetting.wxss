@@ -1,0 +1,34 @@
+/* pages/userSetting/userSetting.wxss */
+.userInfoShow{
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  box-shadow: 0 0 10rpx 2rpx rgb(0,0,0,.2);
+}
+
+.userInfoShow .userInfoRow{
+  height: 220rpx;
+}
+
+.userInfoShow .userImgCol{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 0;
+}
+
+.userInfoShow .userImg{
+  display: block;
+}
+
+.userInfoShow .userInfo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+
+.setting{
+  margin-top: 20rpx;
+}

@@ -1,0 +1,30 @@
+<!--pages/userSetting/userSetting.wxml-->
+
+<!-- userInfoShow -->
+<view class="userInfoShow">
+  <van-row custom-class="userInfoRow">
+    <van-col span="10" custom-class="userImgCol">
+      <van-image custom-class="userImg" width="200rpx" height="200rpx" round fit="cover" src="{{userInfo.avatarUrl}}" />
+    </van-col>
+    <van-col span="14" custom-class="userInfo">
+      <block wx:if="{{ !hasUserInfo }}">
+        <button bindtap="getUserProfile"> 微信登录 </button>
+      </block>
+      <block wx:else>
+        <text>{{userInfo.nickName}}</text>
+      </block>
+    </van-col>
+  </van-row>
+</view>
+
+<!-- setting -->
+<view class="setting">
+  <van-cell-group>
+    <block wx:for="{{ settingData }}">
+      <van-cell data-id="{{ item.id }}" title="{{ item.name }}" is-link bind:click="onSkip" />
+    </block>
+  </van-cell-group>
+</view>
+
+<van-notify id="van-notify" />
+

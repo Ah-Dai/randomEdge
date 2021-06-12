@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "home": "../home/home",
+    "userSetting": "../userSetting/userSetting",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
+  }
+}

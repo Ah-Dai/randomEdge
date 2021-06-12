@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/tabbar/tabbar",
+    "pages/set/set"
+  ],
+  "usingComponents":{
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-notify": "@vant/weapp/notify/index"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "缘",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

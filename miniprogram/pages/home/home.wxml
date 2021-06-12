@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <!-- image -->
+  <view class="postersImg">
+    <van-image 
+      width="100%" 
+      height="100%" 
+      src="{{ article.tempFilePath }}" 
+      bind:click="previewImg" 
+    />
+  </view>
+
+  <view class="content">{{ article.value }}</view>
+
+  <view class="source">
+    <van-image 
+      custom-class="source_avatarUrl" 
+      width="50rpx" 
+      height="50rpx" 
+      round 
+      src="{{ article.avatarUrl }}"
+    />
+    <tetx class="nickName">{{ article.nickName }}</tetx>
+  </view>
+
+  <!-- date -->
+  <!-- <view class="date">
+    <dateShow></dateShow>
+  </view> -->
+
+  <van-toast id="van-toast" />
+</view>

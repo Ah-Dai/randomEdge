@@ -1,0 +1,30 @@
+/* pages/set/set.wxss */
+.set{
+    padding: 20rpx;
+}
+
+.set .btn{
+    margin-top: 200rpx;
+    padding: 0 100rpx;
+}
+
+.set .updateImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.updateImg .updateImg_tip{
+    margin-top: 10rpx;
+    font-size: 28rpx;
+    color: rgb(0, 0, 0, .5);
+}
+
+.tips{
+    font-size: 30rpx;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20rpx;
+    float: right;
+    color:darkgrey;
+}

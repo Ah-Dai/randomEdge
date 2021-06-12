@@ -1,0 +1,7 @@
+/* pages/tabbar/tabbar.wxss */
+.content{
+  height: calc(100vh - 100rpx);
+  padding: 20rpx;
+  padding-bottom: env(safe-area-inset-bottom);
+  box-sizing: border-box;
+}

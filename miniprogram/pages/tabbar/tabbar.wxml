@@ -1,0 +1,21 @@
+<!--pages/tabbar/tabbar.wxml-->
+
+<!-- home -->
+<view class="content">
+  <home wx:if="{{ active === 'home' }}"></home>
+  <userSetting wx:if="{{ active === 'userSetting' }}"></userSetting>
+</view>
+
+<!-- tabbar -->
+<van-tabbar 
+  active="{{ active }}" 
+  fixed
+  placeholderb
+  safe-area-inset-bottom
+  bind:change="onChange"
+>
+  <van-tabbar-item name="home" icon="home-o">首页</van-tabbar-item>
+  <van-tabbar-item name="userSetting" icon="user-o">我的</van-tabbar-item>
+</van-tabbar>
+
+

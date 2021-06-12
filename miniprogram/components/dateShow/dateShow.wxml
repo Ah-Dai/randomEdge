@@ -1,0 +1,7 @@
+
+<!-- date -->
+<view class="date">
+  <view class="date-month">{{ date.month }}</view>
+  <view class="date-slash"></view>
+  <view class="date-day">{{ date.day }}</view>
+</view>

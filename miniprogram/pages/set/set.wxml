@@ -1,0 +1,45 @@
+<!--pages/set/set.wxml-->
+
+<view class="set">
+    <!-- setArticle -->
+    <view class="setArticle" wx:if="{{ showName === 'setArticle' }}">
+        <van-cell-group>
+            <van-field 
+                model:value="{{ message }}" 
+                label="金言玉语" 
+                type="textarea" 
+                placeholder="请输入留言" 
+                autosize
+                maxlength="50"
+                show-word-limit="{{ true }}" 
+                border="{{ false }}" 
+            />
+        </van-cell-group>
+        <view class="tips">
+            每日金口仅开一次({{ degree }}/1)
+        </view>
+    </view>
+
+    <!-- updateImg -->
+    <view class="updateImg" wx:else>
+        <van-uploader 
+            file-list="{{ fileList }}" 
+            upload-text="图片最大为: 5MB"
+            max-count="1"
+            max-size="5242880"
+            preview-size="400rpx"
+            deletable="{{ true }}"
+            bind:after-read="afterRead"
+            bind:oversize="onImgOverSize"
+            bind:delete="onImgDetele"
+        />
+        <view class="updateImg_tip">为江湖赠送一张昂贵的图片(仅慷慨一张)</view>
+    </view>
+
+    <view class="btn">
+        <van-button type="primary" block bind:click="onSetDataBtn">{{ btnName }}</van-button>
+    </view>
+
+</view>
+<van-toast id="van-toast" />
+<van-notify id="van-notify" />
